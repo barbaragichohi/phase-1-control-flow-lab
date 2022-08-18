@@ -11,21 +11,22 @@ function scuberGreetingForFeet(feet){
 
 
 function ternaryCheckCity(city) {
-  if(city === 'NYC') {
-    return 'Ok, sounds good.';
-}else {
-  return 'No go.';
+  let value = (city === "NYC") ? "Ok, sounds good." : "No go.";
+return value;
 }
-}
+
+
+const tip = 'generous';
+function switchOnCharmFromTip(tip){
+  switch (tip) {
+    case  'generous':
+      return 'Thank you so much.'
+    case 'not as generous':
+      return 'Thank you.'
+    default: 
+      return 'Bye.'  
+    }
+  }
+
+
   
-
-
-function switchOnCharmFromTip(say){
-  if (say ==='generous') {
-    return 'Thank you so much.';
-  }else if (say ==='not as generous') {
-    return 'Thank you.'; 
-  }else {
-    return 'Bye.';
-  }
-  }
